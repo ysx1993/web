@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.video-container {
+  position: relative;
+  display: inline-block;
+  background-color: #000000;
+  width: 970px;
+  height: 418px;
+  font-size: 0;
+}
+.video-container::after {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.video-container img {
+  width: 100%;
+}
+.video-container .video {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.video-container .video-controls {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 0;
+}
+.video-container .video-controls::after {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.video-container .video-controls .video-btn {
+  position: relative;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.video-container .video-controls .video-btn .video-play-btn {
+  position: relative;
+  width: 100%;
+}
+.video-container .video-controls .video-btn .video-play-btn .video-play-btn-normal {
+  position: relative;
+  width: 100%;
+}
+.video-container .video-controls .video-btn .video-play-btn .video-play-btn-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.video-container .video-controls .video-btn .video-pause-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.video-container .video-controls .video-btn .video-pause-btn .video-pause-btn-normal {
+  position: relative;
+  width: 100%;
+}
+.video-container .video-controls .video-btn .video-pause-btn .video-pause-btn-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.video-container .video-controls .video-process-bar {
+  position: relative;
+  width: 90%;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.video-container .video-controls .video-process-bar .video-total-process-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.video-container .video-controls .video-process-bar .video-current-process-bar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #999999;
+}
+.video-container .video-controls .video-process-bar .video-current-process-bar .video-handle {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  margin-top: -2.5px;
+  left: 100%;
+  background-color: #999999;
+}
+.video-container .video-controls .video-vol-btn {
+  position: relative;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.video-container .video-controls .video-vol-btn .video-unmute-btn {
+  position: relative;
+  width: 100%;
+}
+.video-container .video-controls .video-vol-btn .video-unmute-btn .video-unmute-btn-normal {
+  position: relative;
+  width: 100%;
+}
+.video-container .video-controls .video-vol-btn .video-unmute-btn .video-unmute-btn-hover {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.video-container .video-controls .video-vol-btn .video-mute-btn {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.video-container .video-controls .video-vol-btn .video-mute-btn .video-mute-btn-normal {
+  position: absolute;
+  width: 100%;
+}
+.video-container .video-controls .video-vol-btn .video-mute-btn .video-mute-btn-hover {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.video-container .video-big-btn {
+  position: absolute;
+  width: 10%;
+  top: 35%;
+  left: 45%;
+  cursor: pointer;
+}
+.video-container .video-big-btn .video-bigplay-btn-normal {
+  position: relative;
+  width: 100%;
+}
+.video-container .video-big-btn .video-bigplay-btn-hover {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.video-container .video-big-btn .video-bigreplay-btn-normal {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.video-container .video-big-btn .video-bigreplay-btn-hover {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
